@@ -1,5 +1,4 @@
-import styles from './style/Button.module.css';
-import './Header.scss'
+import './Header.scss';
 
 export default function header () {
     return (
@@ -13,8 +12,8 @@ export default function header () {
                     <img src='../public/Icon.svg'/>
                     <p>Porto Alegre, RS</p>
                 </span>
-                <button className={styles.button}>
-                    <img src='../public/Icon (6).svg' className={styles.img}/>
+                <button className='buttonCar'>
+                    <img src='../public/Icon (6).svg'/>
                 </button>
             </div>
         </div>

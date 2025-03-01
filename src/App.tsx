@@ -1,6 +1,7 @@
 import './Global.css'
 import Header from './components/Header'
 import Home from './components/Home'
+import CoffeeList from './components/CoffeList'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <Header/>
       <Home/>     
+      <CoffeeList/>
     </>
   )
 }
