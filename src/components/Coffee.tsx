@@ -13,8 +13,8 @@ import Coffee12 from '../../public/Coffee12.svg';
 import Coffee13 from '../../public/Coffee13.svg';
 import Coffee14 from '../../public/Coffee14.svg';
 
-import { VscAdd } from "react-icons/vsc";
-import { VscChromeMinimize } from "react-icons/vsc";
+
+import './Coffee.scss'
 
 export default function Coffee() {
 
@@ -134,7 +134,7 @@ export default function Coffee() {
     ]
 
     return(
-        <div>
+        <div className='containerCoffeeList'>
             {cafesList.map(cafes => 
                 <>
                     <img key={cafes.id} src={cafes.logo}/>
@@ -148,17 +148,17 @@ export default function Coffee() {
                         <p>R${cafes.valor}</p>
                         <div>
                             <button>
-                                <VscChromeMinimize />
+                                -
                             </button>
                             <p>
                                 1
                             </p>
                             <button>
-                                <VscAdd />
+                                +
                             </button>
                         </div>
                         <button>
-
+                            <img src='../public/Vector.svg'/>
                         </button>
                     </div>
                 </>   
