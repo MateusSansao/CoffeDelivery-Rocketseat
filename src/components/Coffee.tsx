@@ -134,19 +134,22 @@ export default function Coffee() {
     ]
 
     return(
-        <div className='containerCoffeeList'>
+     <div className='container'>
+          <h1>Nossos cafés</h1>
+
+          <div className='containerCoffeeList'>
             {cafesList.map(cafes => 
-                <>
+                <div className='cards'>
                     <img key={cafes.id} src={cafes.logo}/>
 
-                    <div>
+                    <div className='discretion'>
                         <span>{cafes.tag}</span>
                         <h2>{cafes.nome}</h2>
                         <p>{cafes.discretion}</p>
                     </div>
-                    <div>
+                    <div className='function'>
                         <p>R${cafes.valor}</p>
-                        <div>
+                        <div className='buttonAdd'>
                             <button>
                                 -
                             </button>
@@ -161,9 +164,9 @@ export default function Coffee() {
                             <img src='../public/Vector.svg'/>
                         </button>
                     </div>
-                </>   
+                </div>   
             )}            
-           
         </div>
+     </div>
     )
 }
